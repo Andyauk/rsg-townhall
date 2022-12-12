@@ -49,7 +49,7 @@ RegisterNetEvent('rsg-townhall:client:jobmenu', function()
             txt = v.description,
             params = {
                 isServer = true,
-				event = 'rsg-cityhall:server:ApplyJob',
+                event = 'rsg-cityhall:server:ApplyJob',
                 args = { job = v.job, lable = v.lable }
             }
         }
