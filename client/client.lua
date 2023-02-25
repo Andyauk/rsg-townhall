@@ -1,11 +1,11 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 
 -----------------------------------------------------------------------------------
 
 -- prompts and blips
 Citizen.CreateThread(function()
     for townhall, v in pairs(Config.TownHallLocations) do
-        exports['qr-core']:createPrompt(v.location, v.coords, QRCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
+        exports['rsg-core']:createPrompt(v.location, v.coords, RSGCore.Shared.Keybinds['J'], 'Open ' .. v.name, {
             type = 'client',
             event = 'rsg-townhall:client:jobmenu',
             args = {},
@@ -58,8 +58,8 @@ RegisterNetEvent('rsg-townhall:client:jobmenu', function()
         header = "❌ | Close Menu",
         txt = '',
         params = {
-            event = 'qr-menu:closeMenu',
+            event = 'rsg-menu:closeMenu',
         }
     }
-    exports['qr-menu']:openMenu(jobMenu)
+    exports['rsg-menu']:openMenu(jobMenu)
 end)
