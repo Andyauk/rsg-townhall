@@ -6,5 +6,5 @@ RegisterNetEvent('rsg-cityhall:server:ApplyJob', function(data)
     if not Player then return end
     local ped = GetPlayerPed(src)
     Player.Functions.SetJob(data.job, 0)
-    TriggerClientEvent('RSGCore:Notify', src, 'Your new job is '..data.lable)
+    TriggerClientEvent('RSGCore:Notify', src, 'Your new job is '..data.title)
 end)

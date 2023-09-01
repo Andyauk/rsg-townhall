@@ -45,32 +45,29 @@ end)
 
 -----------------------------------------------------------------------------------
 
+local options = {}
+
 -- job menu
+for _, v in ipairs(Config.Jobs) do
+    table.insert(options, {
+        title = 'Job Offer: '..v.title,
+        description = v.description,
+        icon = 'fa-solid fa-user',
+        serverEvent = 'rsg-cityhall:server:ApplyJob',
+        args = {
+            job = v.job,
+            title = v.title
+        }
+    })
+end
+
 RegisterNetEvent('rsg-townhall:client:jobmenu', function()
-    jobMenu = {}
-    jobMenu = {
-        {
-            header = "💼 | Job Menu",
-            isMenuHeader = true,
-        },
-    }
-    for k,v in pairs(Config.Jobs) do
-        jobMenu[#jobMenu + 1] = {
-            header = 'Job Offer: '..v.lable,
-            txt = v.description,
-            params = {
-                isServer = true,
-                event = 'rsg-cityhall:server:ApplyJob',
-                args = { job = v.job, lable = v.lable }
-            }
-        }
-    end
-    jobMenu[#jobMenu + 1] = {
-        header = "❌ | Close Menu",
-        txt = '',
-        params = {
-            event = 'rsg-menu:closeMenu',
-        }
-    }
-    exports['rsg-menu']:openMenu(jobMenu)
+    lib.registerContext({
+        id = 'job_menu',
+        title = 'Job Menu',
+        options = options
+    })
+    lib.showContext('job_menu')
 end)
+
+-----------------------------------------------------------------------------------

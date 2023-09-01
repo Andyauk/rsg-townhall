@@ -13,6 +13,6 @@ Config.TownHallLocations = {
 }
 
 Config.Jobs = { -- not job must be in : qr-core -> shared -> jobs
-    { job = 'farmer', lable = 'Farmer', description = 'Farm hand to help around the farm' },
-    { job = 'unemployed', lable = 'Freelancer', description = 'Like to do your own thing' },
+    { job = 'farmer',     title = 'Farmer',     description = 'Farm hand to help around the farm' },
+    { job = 'unemployed', title = 'Freelancer', description = 'Like to do your own thing' },
 }

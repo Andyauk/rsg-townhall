@@ -14,12 +14,13 @@ server_scripts {
 }
 
 shared_scripts {
+    '@ox_lib/init.lua',
     'config.lua'
 }
 
 dependencies {
     'rsg-core',
-    'rsg-menu'
+    'ox_lib',
 }
 
 lua54 'yes'
