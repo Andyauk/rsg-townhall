@@ -9,10 +9,10 @@ Config.Blip = {
 
 Config.TownHallLocations = {
     -- town hall locations
-    { name = 'Valentine Town Hall', location = 'valentine-townhall', coords = vector3(-262.8333, 762.4367, 118.15124), showblip = true, showmarker = true }, --valentine
+    { name = 'Valentine Town Hall', location = 'valentine-townhall', coords = vector3(-262.8333, 762.4367, 118.15124), showblip = true, showmarker = false }, --valentine
 }
 
-Config.Jobs = { -- not job must be in : qr-core -> shared -> jobs
+Config.Jobs = { -- note job must be in : rsg-core -> shared -> jobs
     { job = 'farmer',     title = 'Farmer',     description = 'Farm hand to help around the farm' },
     { job = 'unemployed', title = 'Freelancer', description = 'Like to do your own thing' },
 }
