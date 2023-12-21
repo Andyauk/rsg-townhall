@@ -9,7 +9,8 @@ Config.Blip = {
 
 Config.TownHallLocations = {
     -- town hall locations
-    { name = 'Valentine Town Hall', location = 'valentine-townhall', coords = vector3(-262.8333, 762.4367, 118.15124 -1), showblip = true, showmarker = false }, --valentine
+    { name = 'Valentine Town Hall', location = 'valentine-townhall', coords = vector3(-262.87, 761.80, 118.16 -1), showblip = true, showmarker = false }, --valentine
+    -- add more as required
 }
 
 Config.Jobs = { -- note job must be in : rsg-core -> shared -> jobs
