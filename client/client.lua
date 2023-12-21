@@ -71,3 +71,8 @@ RegisterNetEvent('rsg-townhall:client:jobmenu', function()
 end)
 
 -----------------------------------------------------------------------------------
+RegisterNetEvent('rsg-cityhall:client:NotifyJob')
+AddEventHandler('rsg-cityhall:client:NotifyJob', function(title)
+    -- Displaying a notification with the new job title
+    lib.notify({ title = 'You are now a ' .. title, duration = 5000, type = 'success' })
+end)
