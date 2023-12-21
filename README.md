@@ -3,12 +3,12 @@
 - youtube : https://www.youtube.com/channel/UCikEgGfXO-HCPxV5rYHEVbA
 - github : https://github.com/Rexshack-RedM
 
-# Framework QRCore RedM Edition
-- https://github.com/QRCore-RedM-Re
+# Framework RSGCore RedM Edition
+- https://github.com/Rexshack-RedM
 
 # Dependancies
-- qr-core
-- qr-menu
+- rsg-core
+- ox_lib
 
 # Installation
 - ensure that the dependancies are added and started
